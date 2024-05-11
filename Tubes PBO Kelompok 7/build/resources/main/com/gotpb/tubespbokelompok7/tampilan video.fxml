@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.media.MediaView?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #d4afb9;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.gotpb.tubespbokelompok7.VideoController">
+   <children>
+      <TextField fx:id="fieldKomentar" alignment="TOP_CENTER" layoutX="426.0" layoutY="371.0" prefHeight="29.0" prefWidth="135.0" promptText="Buat komentar" />
+      <Button contentDisplay="GRAPHIC_ONLY" layoutX="561.0" layoutY="372.0" mnemonicParsing="false" onAction="#kirimKomentar" prefHeight="18.0" prefWidth="25.0" text="Button">
+         <graphic>
+            <ImageView fitHeight="20.0" fitWidth="36.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Image/share-png-file-share-icon-free-download-1156313309811bbndeiii.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <ScrollPane fitToHeight="true" fitToWidth="true" layoutX="426.0" prefHeight="370.0" prefWidth="173.0">
+         <content>
+            <VBox fx:id="VBoxTestimoni" prefHeight="314.0" prefWidth="142.0" spacing="10.0" style="-fx-background-color: #FFFFF0;">
+               <children>
+                  <VBox alignment="TOP_CENTER" prefHeight="63.0" prefWidth="142.0">
+                     <children>
+                        <Label text="Username" />
+                        <Label text="Komentar" />
+                        <Label text="Username" />
+                     </children>
+                  </VBox>
+                  <VBox alignment="TOP_CENTER" prefHeight="63.0" prefWidth="142.0">
+                     <children>
+                        <Label text="Komentar" />
+                     </children>
+                  </VBox>
+                  <VBox alignment="TOP_CENTER" prefHeight="63.0" prefWidth="142.0">
+                     <children>
+                        <Label text="Username" />
+                        <Label text="Komentar" />
+                     </children>
+                  </VBox>
+                  <VBox alignment="TOP_CENTER" prefHeight="63.0" prefWidth="142.0">
+                     <children>
+                        <Label text="Username" />
+                        <Label text="Komentar" />
+                     </children>
+                  </VBox>
+                  <VBox alignment="TOP_CENTER" prefHeight="63.0" prefWidth="142.0">
+                     <children>
+                        <Label text="Username" />
+                        <Label text="Komentar" />
+                     </children>
+                  </VBox>
+                  <VBox alignment="TOP_CENTER" prefHeight="63.0" prefWidth="142.0">
+                     <children>
+                        <Label text="Username" />
+                        <Label text="Komentar" />
+                     </children>
+                  </VBox>
+                  <VBox alignment="TOP_CENTER" prefHeight="55.0" prefWidth="142.0">
+                     <children>
+                        <Label text="Username" />
+                        <Label text="Komentar" />
+                     </children>
+                  </VBox>
+                  <VBox alignment="TOP_CENTER" prefHeight="63.0" prefWidth="142.0">
+                     <children>
+                        <Label text="Username" />
+                        <Label text="Komentar" />
+                     </children>
+                  </VBox>
+                  <VBox alignment="TOP_CENTER" prefHeight="63.0" prefWidth="142.0">
+                     <children>
+                        <Label text="Username" />
+                        <Label text="Komentar" />
+                     </children>
+                  </VBox>
+               </children>
+            </VBox>
+         </content>
+      </ScrollPane>
+      <ScrollPane>
+         <content>
+            <VBox prefHeight="400.0" prefWidth="427.0" spacing="10.0" style="-fx-background-color: #cd5c5c;">
+               <children>
+                  <MediaView fx:id="mediaView" fitHeight="200.0" fitWidth="380.0" />
+                  <Label prefHeight="35.0" prefWidth="387.0" text="Judul video" textFill="IVORY" />
+                  <HBox prefHeight="49.0" prefWidth="387.0">
+                     <children>
+                        <Button mnemonicParsing="false" onAction="#play" prefHeight="23.0" prefWidth="27.0">
+                           <graphic>
+                              <ImageView fitHeight="18.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@Image/pngtree-vector-play-icon-png-image_956416.jpg" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button mnemonicParsing="false" onAction="#pause" prefHeight="25.0" prefWidth="28.0">
+                           <graphic>
+                              <ImageView fitHeight="18.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@Image/pngtree-pause-vector-icon-png-image_470715.jpg" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button mnemonicParsing="false" onAction="#reset" prefHeight="17.0" prefWidth="35.0">
+                           <graphic>
+                              <ImageView fitHeight="18.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@Image/kisspng-reset-button-icon-restart-png-free-download-5a75888d69d601.2504583515176521094335.jpg" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="49.0" prefWidth="387.0" spacing="100.0">
+                     <children>
+                        <Button contentDisplay="GRAPHIC_ONLY" mnemonicParsing="false" onAction="#toRating" prefWidth="36.0" text="Button">
+                           <graphic>
+                              <ImageView fitHeight="35.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@Image/png-clipart-love-heart-logo-heart-love-heart-thumbnail.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Label prefHeight="29.0" prefWidth="66.0" text="0x ditonton" textFill="IVORY" />
+                        <Button mnemonicParsing="false" onAction="#takeQuiz" text="Take Quiz" />
+                     </children>
+                  </HBox>
+                  <Label prefHeight="56.0" prefWidth="383.0" text="Deskripsi video" textFill="IVORY" />
+               </children>
+               <padding>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+               </padding>
+            </VBox>
+         </content>
+      </ScrollPane>
+   </children>
+</AnchorPane>
